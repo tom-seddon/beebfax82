@@ -14,4 +14,4 @@ test:
 	$(SHELLCMD) mkdir build/output/
 	$(PYTHON) submodules/beeb/bin/ssd_extract.py -o build/ orig/beebfax82.ssd
 	$(PYTHON) tools/extract.py -o build/output/ build/beebfax82/0/$$.FAX1982 orig/beebfax82.ssd
-	cd build/output && 7z a -mx=9 ../unpacked.zip *.unpacked.dat
+	cd build/output && 7z a -mx=9 ../beebfax82_unpacked.zip *.unpacked.dat
